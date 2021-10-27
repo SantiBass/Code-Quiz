@@ -10,7 +10,7 @@
     }
 body{
 
-background-color: rgb(231, 230, 240); 
+background-color: rgb(208, 207, 219); 
 margin: 0;
 padding: 0;
 }
@@ -22,7 +22,7 @@ padding: 0;
     border: 2px solid black; 
 
 }
-.question-box{
+.question-box{ 
 margin: 100px 0px 50px 20%;
 width: px;
 height: 400px;
@@ -63,25 +63,26 @@ section ul{
     border-radius: 8px;
     
 }
-/* #right-answer{
-    border-radius: 8px;
+/* right-answer{
+   border-radius: 8px;
     width:250px;
     height: 80px;
     background-color: rgb(18, 18, 179);
     font-size: 30px;
     color: white;
-    margin-top: 200px;
-    display: inline-block;
+    margin-top: 10px;
+    display: block; 
 } */
-#wrong-answer{
+/* #wrong-answer{
     border-radius: 8px;
     width:250px;
     height: 80px;
     background-color: rgb(18, 18, 179);
     font-size: 30px;
     color: white;
-    margin-top: 200px;
-}
+    margin-top: 10px;
+    display: block; 
+} */
 .correct{
     border: 3px solid lightgrey;
     margin: 8% 0 0 20%;
@@ -92,14 +93,15 @@ section ul{
 }
 .option-btn{
     border-radius: 8px;
-    width:250px;
+    width:300px;
     height: 80px;
     background-color: rgb(18, 18, 179);
     font-size: 30px;
     color: white;
     margin-top: 10px;
     display: block; /* Make the buttons appear below each other */
-
+    text-align: start;
+    padding-left: 15px;
 }
 .finish-btn{
 width: 100%;
@@ -119,26 +121,35 @@ justify-content: center;
     margin-top: 200px;
 }
 #results{
-    width:50%;
-    height: 500px;
+    width:100%;
+    height: 100vh;
     border: 9px solid black;
-    padding: 70px 50px 50px 500px;
-    margin-left: 600px;
+    justify-content: center;
+    display: flex;
     text-align: left;
-    margin-top: 200px;
+    align-items: center;
+    font-size: 30px;
+}
+#text1{
+
+font-size: 35px;
+width: 500px;
+
 }
 #bye{
 
-width: 60%;
-height:300px;
-margin: 400px 400px;
-border: 2px solid black;
+width: 100%;
+height:100vh;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
-padding: 100px;
 font-size: 80px;
 text-decoration: underline;
-color: rgb(0, 102, 255);
-
+color: rgb(4, 40, 94);
+background-image: url("../assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+background-size: cover;
+background-position: center;
 }
 a{ 
 
@@ -147,3 +158,8 @@ a{
     text-decoration: none;
     
 }
+@media (max-width: 740px) {
+    .box {
+      width: 48%;
+    }
+  }
