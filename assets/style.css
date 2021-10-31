@@ -19,14 +19,15 @@ padding: 0;
    
     width:  100%;
     height: 200px;
-    border: 2px solid black; 
+    /* border: 2px solid black;  */
 
 }
 .question-box{ 
-margin: 100px 0px 50px 20%;
+margin: 100px 0px 50px 5%;
 width: px;
 height: 400px;
-border: 2px solid black; }
+/*   */
+}
 
 section {
     font-size: 50px;
@@ -35,7 +36,7 @@ section {
     padding: 100px;
 }
 
-#start-btn, #quit, #next-btn{
+ #start-btn, #quit{
     border-radius: 8px;
     width:250px;
     height: 80px;
@@ -62,6 +63,16 @@ padding:0px 50px ;
 section ul{
     border-radius: 8px;
     
+}
+
+#name-btn{
+    border-radius: 8px;
+    width:200px;
+    height: 46px;
+    background-color: rgb(95, 95, 255);
+    font-size: 30px;
+    color: white;
+
 }
 /* right-answer{
    border-radius: 8px;

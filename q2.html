@@ -10,8 +10,9 @@
 <body>
     <header id="header">
         <div id="time-score">
-            <div>
-                View Highest Score:
+            <div id="totalScore">
+                View Highest Score: <span class="totalScore">0</span>
+               
             </div>
             <div class="time-score">Time: <span id="countdown"></span>  
                 
@@ -23,20 +24,22 @@
           <div>
         <h1>Question #2 </h1> 
         <div class="question-box" >
-            <button class="option-btn wrong-answer1">wrong</button>
-            <button class="option-btn right-answer">correct</button>
-            <button class="option-btn wrong-answer2">wrong</button>
-            <button class="option-btn wrong-answer3">wrong</button>
+            <a href="./q3.html">  <button class="option-btn wrong-answer1">1. commas</button></a>
+            <a href="./q3.html">  <button class="option-btn right-answer" >2. curly brackets</button>
+            <a href="./q3.html">  <button class="option-btn wrong-answer2">3.quotes</button>
+            <a href="./q3.html">  <button class="option-btn wrong-answer3">4. parenthasis</button>
           </div>
         </div>
-            <button id="next-btn">
+            <!-- <button id="next-btn">
                 <a href="./q3.html">Next</a>
             </button>
-            <!-- <button id="quit"> Quit  </button> -->
+            <button id="quit"> Quit  </button>
             <p id="demo"></p>
             <p id="demo2"></p>
-            
+             -->
         </section>
-        <script src="./assets/script.js"></script>
+       
+        <script src="./timer.js"> </script>
+
 </body>
 </html>
