@@ -1,2 +1,3 @@
 var score = localStorage.getItem("timeSeconds")
-alert(score)
+var highscore =  document.getElementById("timeSeconds")
+highscore.innerHTML= score;

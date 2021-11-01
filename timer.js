@@ -2,10 +2,11 @@
 var timer = document.querySelector("#countdown");
 var scoreEl = document.querySelector("#highScore");
 var score = 0;
-// var wrongEl = document.querySelector(".wrong-answer");
+var finalScoreEl = document.querySelector("#endScore")
 var wrongBtn = document.querySelectorAll(".wrong-answer")
 var rightBtn = document.querySelectorAll(".right-answer");
 var timeSeconds = localStorage.getItem("timeSeconds");
+
 
 var countdown = setInterval(() => {
 
@@ -19,18 +20,22 @@ var countdown = setInterval(() => {
         clearInterval(countdown);
 
 }, 1000);
-
-
-
-
-
 var timeOut = function () {
     if (setInterval === 0) {
 
         return window.location.assign("./finish.html")
     };
 }
+timeOut();
 
+
+
+
+
+
+var finalScore111 = function(){
+    finalScoreEl
+};
 
 var wrongAnswerDecreaseTime = function () {
     var pressed = true;
@@ -41,16 +46,19 @@ var wrongAnswerDecreaseTime = function () {
 
 
 wrongBtn.on("click", function () {
-    if (wrongAnswer == true){
+    if (wrongAnswer == true) {
         console.log(wrongBtn);
-    wrongAnswerDecreaseTime();
-    localStorage.setItem("recentScore", (score -=10) );
+        wrongAnswerDecreaseTime();
+        var x = localStorage.setItem("recentScore", (score));
+        console.log(x);
     }
 })
 var rightAnswerIincreaseTime = function () {
     var pressed2 = true;
     if (rightBtn === pressed2) {
-        return timeSeconds += 10;
+
+         timeSeconds += 10;
+        console.log(timeSeconds);
     };
 };
 
@@ -59,9 +67,10 @@ rightBtn.on("click", function () {
     if (rightAnswerIincreaseTime === true) {
         console.log(rightBtn);
         rightAnswerIincreaseTime();
-        localStorage.setItem("recentScore", (score += 10) );
+
     }
+});
 
 
-})
+
 

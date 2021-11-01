@@ -157,21 +157,23 @@
 // var wrongAnswer3= document.querySelector(".wrong-answer3");
 
 // rightAnswer.addEventListener("click", function(){
-// //    if(rightAnswer.clicked === rightAnswer)
+//  if(rightAnswer.clicked === rightAnswer)
 //     alert("thats correct");
+
 //      console.dir(rightAnswer)
 //     });
 
-//  var scoreTotal = 0;
+  var scoreTotal = 0;
 
-// rightAnswer.addEventListener("click", function(){
-//         //    if(rightAnswer.clicked === rightAnswer)
+rightAnswer.addEventListener("click", function(){
+        //    if(rightAnswer.clicked === rightAnswer)
             
-//              scoreTotal = scoreTotal + 5; 
-//                 alert(scoreTotal);
-//                 localStorage.setItem("score", JSON(scoretottoString))
-//             // rightAnswer.this;
-//         //   localStorage.key(1) = scoreTotal;
+             scoreTotal = scoreTotal + 5; 
+                alert(scoreTotal);
+             score2 =   localStorage.setItem("scoreTotal", scoreTotal);
+                console.log(score2)
+            // rightAnswer.this;
+        //   localStorage.key(1) = scoreTotal;
 //         document.getElementsByClassName("score").innerHTML = "TEST";
 //             // window.localStorage.setItem("scoreTotal", JSON.stringify(scoreTotal));
 //             score.innerHTML =  scoreTotal ;
