@@ -163,15 +163,15 @@
 //      console.dir(rightAnswer)
 //     });
 
-  var scoreTotal = 0;
+//   var scoreTotal = 0;
 
-rightAnswer.addEventListener("click", function(){
-        //    if(rightAnswer.clicked === rightAnswer)
+// rightAnswer.addEventListener("click", function(){
+//         //    if(rightAnswer.clicked === rightAnswer)
             
-             scoreTotal = scoreTotal + 5; 
-                alert(scoreTotal);
-             score2 =   localStorage.setItem("scoreTotal", scoreTotal);
-                console.log(score2)
+//              scoreTotal = scoreTotal + 5; 
+//                 alert(scoreTotal);
+//              score2 =   localStorage.setItem("scoreTotal", scoreTotal);
+//                 console.log(score2)
             // rightAnswer.this;
         //   localStorage.key(1) = scoreTotal;
 //         document.getElementsByClassName("score").innerHTML = "TEST";
